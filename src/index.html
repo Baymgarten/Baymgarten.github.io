@@ -1,194 +1,245 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8"  >
-    <link rel="stylesheet" href="index.css" />
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family
+    =Regular:400|Open+Sans:700|Raleway:300,400,600,
+    700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Андрей Браун - Веб-разработчик</title>
-  </head>
-  <body>
-    
+</head>
+
+<body>
+
     <!--Меню-->
     <header>
-      <nav>
-        <div class="logo">Андрей Браун</div>
-        <div class="menu">
-          <ul>
-            <li>Обо мне</li>
-            <li>Услуги</li>
-            <li>Кейсы</li>
-            <li>Прайс</li>
-            <li>Отзывы</li>
-            <li>Контакты</li>
-          </ul>
-        </div>
-       </nav>
+        <nav>
+            <div class="logo">Андрей Браун</div>
+            <div class="menu">
+                <ul>
+                    <li>Обо мне</li>
+                    <li>Услуги</li>
+                    <li>Кейсы</li>
+                    <li>Прайс</li>
+                    <li>Отзывы</li>
+                    <li>Контакты</li>
+                </ul>
+            </div>
+            </div>
+        </nav>
     </header>
     <!--Блок 1-->
-    <div class="main"></div>
-      <div class="title__container">
-        <h1>Привет<br>Я Андрей Браун</h1>
-        <h4>Фулл стек веб-разработчик</h4>
-        <input type="submit" value="Обо мне">
-        <input type="submit" value="Мои работы">
-      </div>
+    <div class="main">
+        <div class="title__container">
+            <h1>Привет<br>Я Андрей Браун</h1>
+            <h4>Фулл стек веб-разработчик</h4>
+            <input type="submit" value="Обо мне">
+            <input type="submit" value="Мои работы">
+        </div>
     </div>
     <!--Обо мне-->
     <div class="about__me">
         <h2 class="title">Обо мне</h2>
-        <img src="img/title.png" alt="">
-        <img src="img/andrey2.png" alt="">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem voluptas aperiam eos dolore. 
-          Dolorum eos, sunt inventore culpa natus molestias?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem voluptas aperiam eos dolore. 
-          Dolorum eos, sunt inventore culpa natus molestias?</p>
-        <input type="submit" value="Скачать резюме">
+        <div><img class="line" src="img/title.png" alt=""></div>
+        <div><img class="men" src="img/andrey2.png" alt=""></div>
+        <p class="text__1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante <br> facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+        <p class="text__2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante<br> facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+        <div class="submit"><input type="submit" value="Скачать резюме"></div>
     </div>
     <!--Что я умею-->
     <div class="can">
-      <h2 class="title">Что я умею</h2>
-      <img src="img/title.png" alt="">
-      <div class="can__icons"><!--тут классу должна быть задана ширина 25% в css-->
-        <img class="icon" src="icons/icon_1.svg"><!--почему то не отображается иконка-->
-        <p>Веб-дизайн</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem voluptas aperiam eos dolore. 
-            Dolorum eos, sunt inventore culpa natus molestias?</p>
-      </div>
-      <div class="can__icons">
-        <img class="icon" src="icons/icon_2.svg">
-        <p>Разработка</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem voluptas aperiam eos dolore. 
-         Dolorum eos, sunt inventore culpa natus molestias?</p>
-      </div>
-      <div class="can__icons">
-        <img class="icon" src="icons/icon_3.svg">
-        <p>CEO-оптимизация</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem voluptas aperiam eos dolore. 
-        Dolorum eos, sunt inventore culpa natus molestias?</p>
-      </div>
-      <div class="can__icons">
-        <img class="icon" src="icons/icon_4.svg">
-        <p>Маркетинг</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem voluptas aperiam eos dolore. 
-         Dolorum eos, sunt inventore culpa natus molestias?</p>
-      </div>
+        <h2 class="title">Что я умею</h2>
+        <img class="line" src="img/title.png" alt="">
+        <div class="can__inner">
+            <div class="can__icons">
+                <div><img class="icon" src="ic/icon_1.svg"></div>
+                <div class="icon__title">
+                    <p>Веб-дизайн</p>
+                </div>
+                <div class="icon__text">
+                    <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. </p>
+                </div>
+            </div>
+            <div class="can__icons">
+                <div><img class="icon" src="ic/icon_2.svg"></div>
+                <div class="icon__title">
+                    <p>Разработка</p>
+                </div>
+                <div class="icon__text">
+                    <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. </p>
+                </div>
+            </div>
+            <div class="can__icons">
+                <div><img class="icon" src="ic/icon_3.svg"></div>
+                <div class="icon__title">
+                    <p>CEO-оптимизация</p>
+                </div>
+                <div class="icon__text">
+                    <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. </p>
+                </div>
+            </div>
+            <div class="can__icons">
+                <div><img class="icon" src="ic/icon_4.svg"></div>
+                <div class="icon__title">
+                    <p>Маркетинг</p>
+                </div>
+                <div class="icon__text">
+                    <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. </p>
+                </div>
+            </div>
+        </div>
     </div>
     <!--Кейсы-->
-    <div class="keys"><!--тут в будущем будет слайдер-->
-      <h2 class="title">Кейсы</h2>
-      <img src="img/title.png" alt="">
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem voluptas aperiam eos dolore. 
-      Dolorum eos, sunt inventore culpa natus molestias?</p>
-    </div>
-    <div class="works">
-      <img src="#" alt="" class="work"><!--в фотошопе кривая картинка, не удалось скачать-->
-      <div class="title__left">
-        <p class="title__works">Client:<br>Какая-то компания</p>
-        <p class="title__works">Wevsite:<br>
-          <a href="#">адрес сайта</a>
-        </p>
-      </div>
-      <div class="title__right">
-        <p class="work__name">Название проекта</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem voluptas aperiam eos dolore. 
-          Dolorum eos, sunt inventore culpa natus molestias?</p>
-      </div>
+    <div class="keys">
+        <!--тут в будущем будет слайдер-->
+        <h2 class="title">Кейсы</h2>
+        <img class="line" src="img/title.png" alt="">
+        <p class="keys__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem voluptas aperiam eos dolore. Dolorum eos, sunt inventore culpa natus molestias?</p>
+        <div class="works">
+            <img src="img/cat.jpg" alt="" class="work">
+            <div class="keys__resume">
+                <div class="keys__left">
+                    <p class="keys__title"><b>Client:</b></p>
+                    <p>Компания</p>
+                    <p class="keys__title"><b>Wevsite:</b></p>
+                    <p>адрес сайта</p>
+                    <input class="btn" type="submit" value="Visit live site">
+                </div>
+                <div class="keys__right">
+                    <p><b>Название проекта</b>
+                    </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem voluptas aperiam eos dolore. Dolorum eos, sunt inventore culpa natus molestias?
+                    </p>
+                </div>
+            </div>
+
+        </div>
     </div>
     <!--Калькулятор-->
-    <div class="calculator"></div>
-      <p class="calc__title">Расчет стоимости</p>
-      <div class="calc">
-        <div class="calc1">Тип сайта</div>
-        <select name="" id="">
-          <option value="opt1">Интернет-представительство</option>
-          <option value="opt2">Лендинг</option>
-          <option value="opt3">Интернет-магазин</option>
-        </select>
-        <div class="calc1">Дизайн</div>
-        <select name="" id="">
-          <option value="opt1">1</option>
-          <option value="opt2">2</option>
-          <option value="opt3">3</option>
-        </select>
-        <div class="calc1">Адаптивность</div>
-        <select name="" id="">
-          <option value="opt1">1</option>
-          <option value="opt2">2</option>
-          <option value="opt3">3</option>
-        </select>
-        <p class="term">Сроки</p>
-        <p class="total">Стоимость</p>
-      </div>
-<!--Статистика-->
-<div class="static">
-  <h2 class="title">Немного статистики</h2>
-  <img src="img/title.png" alt="">
-  <div class="statis__icon"><!--тут классу должна быть задана ширина 25% в css-->
-    <img class="icon" src="icons/static_1.svg"><!--почему-то иконки не отображаются при просмотре. надеюсь в css зададим стили-->
-    <p>120</p>
-    <p>Счастливых клиентов</p>
-  </div>
-  <div class="statis__icon">
-    <img class="icon" src="icons/static_2.svg">
-    <p>4,600</p>
-    <p>Часов работы</p>
-  </div>
-  <div class="statis__icon">
-    <img class="icon" src="icons/static_3.svg">
-    <p>340</p>
-    <p>Проектов завершено</p>
-  </div>
-  <div class="statis__icon">
-    <img class="icon" src="icons/static_4.svg">
-    <p>23</p>
-    <p>Наград получено</p>
-  </div>
-</div>
-<!--Отзывы-->
-<div class="rewiews">
-  <h2 class="title">Отзывы</h2>
-  <img src="img/title.png" alt="">
-  <div class="rewiew__block"><!--это в будущем слайдер-->
-    <img src="img/men.png" alt="">
-    <p class="rewiew__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia esse quo 
-      rerum doloribus. Sit, similique temporibus! Est sed nisi ipsam!</p>
-      <p class="rewiew__author">Михаил, Ген директор ПАО “Газпром”.</p>
-  </div>
-</div>
-<!--Контакты-->
-<div class="contants">
-  <h2 class="contants__title">Мои контакты</h2>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem voluptas aperiam eos dolore. 
-    Dolorum eos, sunt inventore culpa natus molestias?</p>
-  <div class="contants__block">
-    <div class="contact"><!--тут классу должна быть задана ширина 33.333% в css-->
-      <img class="cont" src="icons/contants_1.svg"><!--почему то не отображается иконка-->
-      <p>Санкт-Петербург<br> Невский 11</p>
+    <div class="calculator">
+        <p class="calc__title">Расчет стоимости</p>
+        <div class="calc">
+            <div class="calc1">Тип сайта</div>
+            <select class="calc__opt" name="" id="">
+                <option value="opt1">Интернет-представительство</option>
+                <option value="opt2">Лендинг</option>
+                <option value="opt3">Интернет-магазин</option>
+            </select>
+            <div class="calc1">Дизайн</div>
+            <select class="calc__opt" name="" id="">
+                 <option value="opt1">1</option>
+                <option value="opt2">2</option>
+                <option value="opt3">3</option>
+            </select>
+            <div class="calc1">Адаптивность</div>
+            <select class="calc__opt" name="" id="">
+                <option value="opt1">1</option>
+                <option value="opt2">2</option>
+                <option value="opt3">3</option>
+            </select>
+            <p class="term">Сроки</p>
+            <p class="total">Стоимость</p>
+        </div>
     </div>
-    <div class="contact">
-      <img class="cont" src="icons/contants_2.svg">
-      <p>info@companyname.com</p>
+    <!--Статистика-->
+    <div class="static">
+        <h2 class="title">Немного статистики</h2>
+        <img class="line" src="img/title.png" alt="">
+        <div class="static__inner">
+            <div class="static__icon">
+                <div><img class="icon" src="ic/static_1.svg"></div>
+                <div class="static__title">
+                    <p>120</p>
+                </div>
+                <div class="static__text">
+                    <p>Счастливых клиентов</p>
+                </div>
+            </div>
+            <div class="static__icon">
+                <div><img class="icon" src="ic/static_2.svg"></div>
+                <div class="static__title">
+                    <p>4,600</p>
+                </div>
+                <div class="static__text">
+                    <p>Часов работы</p>
+                </div>
+            </div>
+            <div class="static__icon">
+                <div><img class="icon" src="ic/static_3.svg"></div>
+                <div class="static__title">
+                    <p>340</p>
+                </div>
+                <div class="static__text">
+                    <p>Проектов завершено</p>
+                </div>
+            </div>
+            <div class="static__icon">
+                <div><img class="icon" src="ic/static_4.svg"></div>
+                <div class="static__title">
+                    <p>23</p>
+                </div>
+                <div class="static__text">
+                    <p>Наград получено</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="contact">
-      <img class="cont" src="icons/contants_3.svg">
-      <p>+7 999-999-99-99</p>
+    <!--Отзывы-->
+    <div class="rewiews">
+        <h2 class="title">Отзывы</h2>
+        <div><img class="line" src="img/title.png" alt=""></div>
+        <div class="rewiew__block">
+            <!--это в будущем слайдер-->
+            <img src="img/men.png" alt="">
+            <p class="rewiew__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia esse quo rerum doloribus. Sit, similique temporibus! Est sed nisi ipsam!</p>
+            <p class="rewiew__author">Михаил, Ген директор ПАО “Газпром”.</p>
+        </div>
     </div>
-  </div>
-  <div class="contants__message">
-    <h2 class="contants__title">Оставьте мне сообщение</h2>
-    <form action="#">
-    <input class="name" type="text" placeholder="Имя">
-    <input class="email" type="text" placeholder="E-mail">
-    <textarea class="massage" name="" id="" cols="30" rows="10"></textarea>
-    <input type="submit" value="Отправить">
-  </form>
-  </div>
-  <div class="contact__social">тут будут иконки</div>
-</div>
-<!--Карта-->
-<div class="map">
-  <button>i'm here!</button>
-</div>
+    <!--Контакты-->
+    <div class="contants">
+        <h2 class="contants__title">Мои контакты</h2>
+        <img class="line" src="img/title.png" alt="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem voluptas aperiam eos dolore. Dolorum eos, sunt inventore culpa natus molestias?</p>
+        <div class="contants__block">
+            <div class="contact">
+                <img class="cont" src="ic/c1.png">
+                <p>Санкт-Петербург<br> Невский 11</p>
+            </div>
+            <div class="contact">
+                <img class="cont" src="ic/c2.png">
+                <p>info@companyname.com</p>
+            </div>
+            <div class="contact">
+                <img class="cont" src="ic/c3.png">
+                <p>+7 999-999-99-99</p>
+            </div>
+        </div>
+        <div class="contants__message1">
+            <h2 class="contants__title1">Оставьте мне сообщение</h2>
+            <div class="form">
+                <form action="#">
+                    <input class="name" type="text" placeholder="Имя">
+                    <input class="email" type="text" placeholder="E-mail">
+                </form>
+            </div>
+        </div>
+        <div class="contants__message2">
+            <textarea class="massage" name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <input class="submit__1" type="submit" value="Отправить">
+        <div class="contact__social">тут будут иконки</div>
+    </div>
+    <!--Карта-->
+    <div class="map">
+        <button class="btn2">i'm here!</button>
+    </div>
+    <footer>
+        <p class="foot">Copyright © 2021 Андрей Браун. Design by Web</p>
+    </footer>>
 
-  </body>
+</body>
+
 </html>

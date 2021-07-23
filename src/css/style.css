@@ -1,0 +1,467 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1920px;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: #344051;
+    font-family: "Franklin Gothic Medium", Arial, sans-serif;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Regular";
+    line-height: 60px;
+    padding-left: 390px;
+    float: left;
+    font-family: "Franklin Gothic Medium", Arial, sans-serif;
+}
+
+.menu {
+    float: left;
+    padding-left: 430px;
+}
+
+.menu li {
+    float: left;
+    line-height: 60px;
+    color: #ffffff;
+    margin-right: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.main {
+    width: 100%;
+    height: calc(100% - 60px);
+    background: url(../img/andrey1.png) 90% 100%/auto 85% no-repeat, url(../img/bg1.png) center/cover no-repeat;
+}
+
+.title__container {
+    float: left;
+    margin: 430px 0px 0px 405px;
+    color: #2c384a;
+    text-align: center;
+}
+
+.title__container h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.title__container h4 {
+    margin-top: 40px;
+    font-size: 16px;
+    color: #79818d;
+}
+
+.title__container input {
+    margin: 58px 14px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    padding: 0px 15px;
+}
+
+.about__me {
+    width: 100%;
+    height: 716px;
+    background-color: #fcfdfd;
+    box-shadow: 0px -2px 30px 0px #2c384a;
+    text-align: center;
+    top: 0px;
+    display: block;
+}
+
+.title {
+    padding-top: 109px;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #263244;
+    font-weight: bold;
+}
+
+.line {
+    margin-top: 33px;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.men {
+    width: 200px;
+    margin-top: 59px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.text__1 {
+    font-size: 14px;
+    margin-bottom: 42px;
+    text-align: center;
+    font-family: "Calibri", Arial, sans-serif;
+}
+
+.text__2 {
+    font-size: 14px;
+    margin-bottom: 38px;
+    text-align: center;
+    font-family: "Calibri", Arial, sans-serif;
+}
+
+.about__me input {
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    padding: 0px 15px;
+}
+
+.can {
+    width: 100%;
+    height: 524px;
+    background: url(../img/background2.png);
+    text-align: center;
+    top: 0px;
+    display: block;
+}
+
+.can__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 260px 90px 260px;
+}
+
+.can__icons {
+    width: 25%;
+    padding: 0 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+.icon__title {
+    font-family: "Bahnschrift", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #cf7600;
+    margin-top: 35px;
+    margin-bottom: 18px;
+}
+
+.icon__text {
+    font-family: "Calibri", Arial, sans-serif;
+    font-size: 14px;
+}
+
+.keys {
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    top: 0px;
+    display: block;
+}
+
+.keys__text {
+    margin: 35px 0px 42px 0px;
+}
+
+.work {
+    width: 1170px;
+    height: 590px;
+}
+
+.keys__resume {
+    margin-top: 45px;
+    width: 1170px;
+    display: inline-flex;
+    justify-content: baseline;
+    font-family: "Calibri", Arial, sans-serif;
+}
+
+.keys__left {
+    text-align: left;
+    margin: 0 auto;
+    line-height: 1.5em;
+    font-size: 18px;
+    padding-right: 100px;
+}
+
+.keys__right {
+    text-align: left;
+    margin: 0 auto;
+    line-height: 1.5em;
+    font-size: 18px;
+}
+
+.keys__title {
+    text-transform: uppercase;
+}
+
+.btn {
+    margin: 23px 0px 0px 0px;
+    height: 44px;
+    text-align: center;
+    border: 2px solid #63b5ae;
+    border-radius: 5px;
+    background-color: #63b5ae;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0px 45px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calculator {
+    width: 100%;
+    background-color: #fcfdfd;
+    text-align: center;
+    top: 0px;
+    margin-top: 200px;
+    display: block;
+}
+
+.calc__title {
+    text-align: center;
+    text-transform: inherit;
+    font-size: 30px;
+    color: #263244;
+    font-weight: bold;
+}
+
+.calc {
+    text-align: left;
+    width: 887px;
+    margin: 0 auto;
+}
+
+.calc1 {
+    text-transform: uppercase;
+    padding-top: 50px;
+    font-family: "Franklin Gothic Medium", Arial, sans-serif;
+    font-size: 20px;
+    padding-bottom: 22px;
+}
+
+.calc__opt {
+    background-color: #eeeeee;
+    width: 887px;
+    height: 58px;
+}
+
+.term {
+    margin-top: 65px;
+    font-size: 20px;
+    font-family: "Franklin Gothic Medium", Arial, sans-serif;
+}
+
+.total {
+    margin-top: 24px;
+    font-size: 20px;
+    font-family: "Franklin Gothic Medium", Arial, sans-serif;
+}
+
+.static {
+    width: 100%;
+    background: url(../img/background3.png);
+    background-size: cover;
+    text-align: center;
+    top: 0px;
+    display: block;
+}
+
+.static__inner {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 88px 280px 0px 300px;
+}
+
+.static__icon {
+    width: 25%;
+    padding: 30px 75px;
+    margin-bottom: 33px;
+    text-align: center;
+}
+
+.static__title {
+    margin-top: 34px;
+    margin-bottom: 30px;
+    color: #323e4f;
+    font-size: 28px;
+    font-family: "Impact", Arial, sans-serif;
+    font-weight: 600;
+}
+
+.static__text {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #323e4f;
+    font-weight: 400;
+}
+
+.rewiews {
+    width: 100%;
+    background-color: #fcfdfd;
+    text-align: center;
+    top: 0px;
+    display: block;
+}
+
+.rewiews img {
+    margin: 58px 0px 35px 0px;
+}
+
+.rewiew__text {
+    margin-bottom: 36px;
+    font-size: 14px;
+}
+
+.rewiew__author {
+    margin-bottom: 48px;
+    font-size: 14px;
+}
+
+.contants {
+    width: 100%;
+    background-color: #fcfdfd;
+    background: url(../img/bg4.png);
+    background-size: cover;
+    text-align: center;
+    top: 0px;
+    display: block;
+}
+
+.contants__title {
+    padding-top: 100px;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.contants>p {
+    color: #ffffff;
+    padding-top: 30px;
+}
+
+.contants__block {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.contact {
+    color: #ffffff;
+    padding: 15px 50px;
+}
+
+.cont {
+    padding-bottom: 15px;
+}
+
+.contact p {
+    font-family: "Calibri", Arial, sans-serif;
+    font-weight: 600;
+}
+
+.contants__message {}
+
+.contants__title1 {
+    color: #ffffff;
+    padding-top: 39px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.contants__message2 {
+    display: flex;
+    justify-content: center;
+}
+
+.name {
+    width: 353px;
+    height: 35px;
+    margin: 45px 15px 0px 15px;
+}
+
+.email {
+    width: 353px;
+    height: 35px;
+    margin: 45px 15px 0px 15px;
+}
+
+.massage {
+    width: 733px;
+    height: 96px;
+    margin: 15px 0px 25px 0px;
+}
+
+.submit__1 {
+    height: 42px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 16px;
+    color: #fff;
+    padding: 0px 15px;
+    font-family: "Franklin Gothic Medium", Arial, sans-serif;
+}
+
+.contact__social {}
+
+.map {
+    background: url(../img/map.png);
+    width: 100%;
+    height: 352px;
+    background-size: cover;
+    text-align: center;
+}
+
+.btn2 {
+    text-align: center;
+    background-color: #fff;
+    width: 135px;
+    height: 45px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 145px auto;
+}
+
+footer {
+    text-align: center;
+    height: 90px;
+    background-color: #354051;
+}
+
+.foot {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    padding-top: 35px;
+}
