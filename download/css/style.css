@@ -1,0 +1,92 @@
+body {
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    max-width: 1920px;
+}
+
+.name {
+    padding-top: 300px;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+.dots {
+    font-size: 200px;
+    color: aliceblue;
+    font-weight: 900;
+    text-align: center;
+    animation-name: dots;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes dots {
+    0% {
+        opacity: 1;
+        padding-left: 250px;
+    }
+    50% {
+        opacity: 1;
+        text-align: center;
+    }
+    100% {
+        opacity: 1;
+        padding-right: 250px;
+    }
+}
+
+.title {
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    max-width: 1920px;
+    height: 1000px;
+    max-height: 1200px;
+}
+
+@keyframes move {
+    0% {
+        background-color: lightgreen;
+    }
+    10% {
+        background-color: turquoise;
+    }
+    20% {
+        background-color: dodgerblue;
+    }
+    30% {
+        background-color: mediumblue;
+    }
+    40% {
+        background-color: rebeccapurple;
+    }
+    50% {
+        background-color: salmon;
+    }
+    60% {
+        background-color: pink;
+    }
+    70% {
+        background-color: peru;
+    }
+    80% {
+        background-color: saddlebrown;
+    }
+    90% {
+        background-color: olive;
+    }
+    95% {
+        background-color: seagreen;
+    }
+    100% {
+        background-color: lightgreen;
+    }
+}
