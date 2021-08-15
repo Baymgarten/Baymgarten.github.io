@@ -25,7 +25,6 @@
         font-size: 20px;
         font-family: "Regular";
         line-height: 60px;
-        padding-left: 390px;
         float: left;
         font-family: "Franklin Gothic Medium", Arial, sans-serif;
         animation: comming 2s ease;
@@ -42,7 +41,6 @@
     
     .menu {
         float: left;
-        padding-left: 430px;
     }
     
     .menu li {
@@ -54,6 +52,10 @@
         text-transform: uppercase;
         animation: topshift 0.4s ease forwards;
         opacity: 0;
+    }
+    
+    .white-btn:visited {
+        color: #fff;
     }
     
     main {
@@ -119,9 +121,9 @@
     
     .title__container {
         float: left;
-        margin: 430px 0px 0px 405px;
         color: #2c384a;
         text-align: center;
+        width: 100%;
         opacity: 0;
         animation-delay: 2s;
         animation: titlemove 1.5s ease forwards;
@@ -134,7 +136,7 @@
         }
         to {
             opacity: 1;
-            margin-left: 404px;
+            margin-left: 0px;
         }
     }
     
@@ -172,6 +174,31 @@
         color: #6d7682;
         font-size: 13px;
         padding: 0px 15px;
+    }
+    
+    @media (max-width: 991px) {
+        .title__container h1,
+        .title__container h4,
+        .title__container label {
+            color: #fff;
+            position: relative;
+            z-index: 1;
+        }
+        .title__container input {
+            border: 2px solid #fff;
+        }
+        .main {
+            position: relative;
+        }
+        .main::after {
+            content: "";
+            bottom: 0;
+            top: 0;
+            right: 0;
+            left: 0;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
     }
     
     .about__me {
@@ -264,11 +291,9 @@
     .can__inner {
         display: flex;
         flex-wrap: wrap;
-        margin: 100px 260px 90px 260px;
     }
     
     .can__icons {
-        width: 25%;
         padding: 0 40px;
         margin-bottom: 30px;
         text-align: center;
@@ -332,13 +357,11 @@
     }
     
     .work {
-        width: 1170px;
         height: 590px;
     }
     
     .keys__resume {
         margin-top: 45px;
-        width: 1170px;
         display: inline-flex;
         justify-content: baseline;
         font-family: "Calibri", Arial, sans-serif;
@@ -363,7 +386,7 @@
         text-transform: uppercase;
     }
     
-    .btn {
+    .btn1 {
         margin: 23px 0px 0px 0px;
         height: 44px;
         text-align: center;
@@ -380,7 +403,7 @@
         transform: scale(1);
     }
     
-    .btn:active {
+    .btn1:active {
         transform: scale(1.1);
     }
     
@@ -449,7 +472,7 @@
         display: flex;
         flex-wrap: wrap;
         text-align: center;
-        margin: 88px 280px 0px 300px;
+        margin: 88px 0px 0px 0px;
     }
     
     .static__icon {

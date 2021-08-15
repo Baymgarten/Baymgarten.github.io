@@ -4,11 +4,14 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family
     =Regular:400|Open+Sans:700|Raleway:300,400,600,
     700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
     <title>Андрей Браун - Веб-разработчик</title>
 </head>
 
@@ -17,31 +20,58 @@
     <!--Меню-->
     <header>
         <nav>
-            <div class="logo">Андрей Браун</div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Обо мне</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Кейсы</a></li>
-                    <li><a href="#">Прайс</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-2 col-lg-3 col-7">
+                        <div class="logo">Андрей Браун</div>
+                    </div>
+                    <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#aboutme">Обо мне</a></li>
+                                <li><a href="#can">Услуги</a></li>
+                                <li><a href="#key">Кейсы</a></li>
+                                <li><a href="#calc">Прайс</a></li>
+                                <li><a href="#rewiews">Отзывы</a></li>
+                                <li><a href="#contants">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                        <div class="dropdown">
+                            <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">Меню</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#aboutme">Обо мне</a></li>
+                                <li><a class="dropdown-item" href="#can">Услуги</a></li>
+                                <li><a class="dropdown-item" href="#key">Кейсы</a></li>
+                                <li><a class="dropdown-item" href="#calc">Прайс</a></li>
+                                <li><a class="dropdown-item" href="#rewiews">Отзывы</a></li>
+                                <li><a class="dropdown-item" href="#contants">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
     <!--Блок 1-->
     <section class="main">
-        <div class="title__container">
-            <h1>Привет<br>Я Андрей Браун</h1>
-            <h4>Фулл стек веб-разработчик</h4>
-            <label><input type="button" value="Обо мне"></label>
-            <label><input type="button" value="Мои работы"></label>
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
+                <div class="col-lg-6 mt-10 pt-10">
+                    <div class="title__container mt-10">
+                        <h1>Привет<br>Я Андрей Браун</h1>
+                        <h4>Фулл стек веб-разработчик</h4>
+                        <label><input type="button" value="Обо мне"></label>
+                        <label><input type="button" value="Мои работы"></label>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </section>
     <!--Обо мне-->
-    <section class="about__me">
+    <section class="about__me" id="aboutme">
         <h2 class="title">Обо мне</h2>
         <div><img class="line" src="img/title.png" alt=""></div>
         <div><img class="men" src="img/andrey2.png" alt=""></div>
@@ -51,76 +81,85 @@
             <label><input type="button" value="Скачать резюме"></label></div>
     </section>
     <!--Что я умею-->
-    <section class="can">
+    <section class="can" id="can">
         <h2 class="title">Что я умею</h2>
         <img class="line" src="img/title.png" alt="">
-        <div class="can__inner">
-            <div class="can__icons">
-                <div><img class="icon" src="ic/icon_1.svg"></div>
-                <div class="icon__title">
-                    <p>Веб-дизайн</p>
+        <div class="container">
+            <div class="row">
+                <div class="can__inner">
+                    <div class="can__icons col-3">
+                        <div><img class="icon" src="ic/icon_1.svg"></div>
+                        <div class="icon__title">
+                            <p>Веб-дизайн</p>
+                        </div>
+                        <div class="icon__text">
+                            <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. </p>
+                        </div>
+                    </div>
+                    <div class="can__icons col-3">
+                        <div><img class="icon" src="ic/icon_2.svg"></div>
+                        <div class="icon__title">
+                            <p>Разработка</p>
+                        </div>
+                        <div class="icon__text">
+                            <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. </p>
+                        </div>
+                    </div>
+                    <div class="can__icons col-3">
+                        <div><img class="icon" src="ic/icon_3.svg"></div>
+                        <div class="icon__title">
+                            <p>CEO-оптимизация</p>
+                        </div>
+                        <div class="icon__text">
+                            <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. </p>
+                        </div>
+                    </div>
+                    <div class="can__icons col-3">
+                        <div><img class="icon" src="ic/icon_4.svg"></div>
+                        <div class="icon__title">
+                            <p>Маркетинг</p>
+                        </div>
+                        <div class="icon__text">
+                            <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="icon__text">
-                    <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. </p>
-                </div>
-            </div>
-            <div class="can__icons">
-                <div><img class="icon" src="ic/icon_2.svg"></div>
-                <div class="icon__title">
-                    <p>Разработка</p>
-                </div>
-                <div class="icon__text">
-                    <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. </p>
-                </div>
-            </div>
-            <div class="can__icons">
-                <div><img class="icon" src="ic/icon_3.svg"></div>
-                <div class="icon__title">
-                    <p>CEO-оптимизация</p>
-                </div>
-                <div class="icon__text">
-                    <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. </p>
-                </div>
-            </div>
-            <div class="can__icons">
-                <div><img class="icon" src="ic/icon_4.svg"></div>
-                <div class="icon__title">
-                    <p>Маркетинг</p>
-                </div>
-                <div class="icon__text">
-                    <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. </p>
-                </div>
-            </div>
-        </div>
     </section>
+    </div>
+    </div>
+
     <!--Кейсы-->
-    <section class="keys">
+    <section class="keys" id="key">
         <!--тут в будущем будет слайдер-->
         <h2 class="title">Кейсы</h2>
         <img class="line" src="img/title.png" alt="">
         <p class="keys__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem voluptas aperiam eos dolore. Dolorum eos, sunt inventore culpa natus molestias?</p>
-        <div class="works">
-            <img src="img/cat.jpg" alt="" class="work">
-            <div class="keys__resume">
-                <div class="keys__left">
-                    <p class="keys__title"><b>Client:</b></p>
-                    <p>Компания</p>
-                    <p class="keys__title"><b>Wevsite:</b></p>
-                    <p>адрес сайта</p>
-                    <label><input class="btn" type="button" value="Visit live site"></label>
-                </div>
-                <div class="keys__right">
-                    <p><b>Название проекта</b>
-                    </p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem voluptas aperiam eos dolore. Dolorum eos, sunt inventore culpa natus molestias?
-                    </p>
+        <div class="container">
+            <div class="row">
+                <div class="works">
+                    <img src="img/cat.jpg" alt="" class="work col-12">
+                    <div class="keys__resume">
+                        <div class="keys__left col-3">
+                            <p class="keys__title"><b>Client:</b></p>
+                            <p>Компания</p>
+                            <p class="keys__title"><b>Wevsite:</b></p>
+                            <p>адрес сайта</p>
+                            <label><input class="btn1" type="button" value="Visit live site"></label>
+                        </div>
+                        <div class="keys__right col-9">
+                            <p><b>Название проекта</b>
+                            </p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem voluptas aperiam eos dolore. Dolorum eos, sunt inventore culpa natus molestias?
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
+
     </section>
     <!--Калькулятор-->
-    <section class="calculator">
+    <section class="calculator" id="calc">
         <p class="calc__title">Расчет стоимости</p>
         <div class="calc">
             <div class="calc1">Тип сайта</div>
@@ -149,47 +188,51 @@
     <section class="static">
         <h2 class="title">Немного статистики</h2>
         <img class="line" src="img/title.png" alt="">
-        <div class="static__inner">
-            <div class="static__icon">
-                <div><img class="icon" src="ic/static_1.svg"></div>
-                <div class="static__title">
-                    <p>120</p>
-                </div>
-                <div class="static__text">
-                    <p>Счастливых клиентов</p>
-                </div>
-            </div>
-            <div class="static__icon">
-                <div><img class="icon" src="ic/static_2.svg"></div>
-                <div class="static__title">
-                    <p>4,600</p>
-                </div>
-                <div class="static__text">
-                    <p>Часов работы</p>
-                </div>
-            </div>
-            <div class="static__icon">
-                <div><img class="icon" src="ic/static_3.svg"></div>
-                <div class="static__title">
-                    <p>340</p>
-                </div>
-                <div class="static__text">
-                    <p>Проектов завершено</p>
-                </div>
-            </div>
-            <div class="static__icon">
-                <div><img class="icon" src="ic/static_4.svg"></div>
-                <div class="static__title">
-                    <p>23</p>
-                </div>
-                <div class="static__text">
-                    <p>Наград получено</p>
+        <div class="container">
+            <div class="row">
+                <div class="static__inner d-flex flex-wrap">
+                    <div class="static__icon col-3">
+                        <div><img class="icon" src="ic/static_1.svg"></div>
+                        <div class="static__title">
+                            <p>120</p>
+                        </div>
+                        <div class="static__text">
+                            <p>Счастливых клиентов</p>
+                        </div>
+                    </div>
+                    <div class="static__icon col-3">
+                        <div><img class="icon" src="ic/static_2.svg"></div>
+                        <div class="static__title">
+                            <p>4,600</p>
+                        </div>
+                        <div class="static__text">
+                            <p>Часов работы</p>
+                        </div>
+                    </div>
+                    <div class="static__icon col-3">
+                        <div><img class="icon" src="ic/static_3.svg"></div>
+                        <div class="static__title">
+                            <p>340</p>
+                        </div>
+                        <div class="static__text">
+                            <p>Проектов завершено</p>
+                        </div>
+                    </div>
+                    <div class="static__icon col-3">
+                        <div><img class="icon" src="ic/static_4.svg"></div>
+                        <div class="static__title">
+                            <p>23</p>
+                        </div>
+                        <div class="static__text">
+                            <p>Наград получено</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!--Отзывы-->
-    <section class="rewiews">
+    <section class="rewiews" id="rewiews">
         <h2 class="title">Отзывы</h2>
         <div><img class="line" src="img/title.png" alt=""></div>
         <div class="rewiew__block">
@@ -200,7 +243,7 @@
         </div>
     </section>
     <!--Контакты-->
-    <section class="contants">
+    <section class="contants" id="contants">
         <h2 class="contants__title">Мои контакты</h2>
         <img class="line" src="img/title.png" alt="">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem voluptas aperiam eos dolore. Dolorum eos, sunt inventore culpa natus molestias?</p>
@@ -218,18 +261,23 @@
                 <p>+7 999-999-99-99</p>
             </div>
         </div>
-        <div class="contants__message1">
-            <h2 class="contants__title1">Оставьте мне сообщение</h2>
-            <div class="form">
-                <form action="#">
-                    <label><input class="name" type="text" placeholder="Имя"></label>
-                    <label><input class="email" type="text" placeholder="E-mail"></label>
-                </form>
+        <div class="container">
+            <div class="row">
+                <div class="contants__message1">
+                    <h2 class="contants__title1">Оставьте мне сообщение</h2>
+                    <div class="form">
+                        <form action="#">
+                            <label><input class="name col-4" type="text" placeholder="Имя"></label>
+                            <label><input class="email col-4" type="text" placeholder="E-mail"></label>
+                        </form>
+                    </div>
+                </div>
+                <div class="contants__message2">
+                    <label><textarea class="massage col-8" name="" id="" cols="30" rows="10"></textarea></label>
+                </div>
             </div>
         </div>
-        <div class="contants__message2">
-            <label><textarea class="massage" name="" id="" cols="30" rows="10"></textarea></label>
-        </div>
+
         <label><input class="submit__1" type="button" value="Отправить"></label>
         <div class="contact__social">тут будут иконки</div>
     </section>
@@ -242,7 +290,7 @@
         <p class="foot">Copyright © 2021 Андрей Браун. Design by Web</p>
     </footer>
 
-
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
