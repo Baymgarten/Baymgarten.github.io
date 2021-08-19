@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
+
     <title>Андрей Браун - Веб-разработчик</title>
 </head>
 
@@ -39,8 +40,9 @@
                     </div>
                     <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
                         <div class="dropdown">
-                            <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">Меню</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <button class="btn btn-secondary dropdown-toggle 
+                            white-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">Меню</button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <li><a class="dropdown-item" href="#aboutme">Обо мне</a></li>
                                 <li><a class="dropdown-item" href="#can">Услуги</a></li>
                                 <li><a class="dropdown-item" href="#key">Кейсы</a></li>
@@ -58,12 +60,12 @@
     <section class="main">
         <div class="container h-100">
             <div class="row align-items-center h-100">
-                <div class="col-lg-6 mt-10 pt-10">
+                <div class="col-lg-6 mt-10 pt-10 zi">
                     <div class="title__container mt-10">
                         <h1>Привет<br>Я Андрей Браун</h1>
                         <h4>Фулл стек веб-разработчик</h4>
-                        <label><input type="button" value="Обо мне"></label>
-                        <label><input type="button" value="Мои работы"></label>
+                        <label><input href="#aboutme" type="button" value="Обо мне"></label>
+                        <label><input href="#key" type="button" value="Мои работы"></label>
                     </div>
                 </div>
             </div>
@@ -71,15 +73,20 @@
 
     </section>
     <!--Обо мне-->
+
     <section class="about__me" id="aboutme">
         <h2 class="title">Обо мне</h2>
         <div><img class="line" src="img/title.png" alt=""></div>
         <div><img class="men" src="img/andrey2.png" alt=""></div>
-        <p class="text__1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante <br> facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-        <p class="text__2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante<br> facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-        <div class="submit1">
-            <label><input type="button" value="Скачать резюме"></label></div>
+        <div class="container">
+            <p class="text__1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante <br> facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+            <p class="text__2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante<br> facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+            <div class="submit1">
+                <label><input type="button" value="Скачать резюме"></label></div>
+        </div>
+
     </section>
+
     <!--Что я умею-->
     <section class="can" id="can">
         <h2 class="title">Что я умею</h2>
@@ -87,7 +94,7 @@
         <div class="container">
             <div class="row">
                 <div class="can__inner">
-                    <div class="can__icons col-3">
+                    <div class="can__icons col-md-6 col-xs-12 col-lg-3">
                         <div><img class="icon" src="ic/icon_1.svg"></div>
                         <div class="icon__title">
                             <p>Веб-дизайн</p>
@@ -96,7 +103,7 @@
                             <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. </p>
                         </div>
                     </div>
-                    <div class="can__icons col-3">
+                    <div class="can__icons col-md-6 col-xs-12 col-lg-3">
                         <div><img class="icon" src="ic/icon_2.svg"></div>
                         <div class="icon__title">
                             <p>Разработка</p>
@@ -105,7 +112,7 @@
                             <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. </p>
                         </div>
                     </div>
-                    <div class="can__icons col-3">
+                    <div class="can__icons col-md-6 col-xs-12 col-lg-3">
                         <div><img class="icon" src="ic/icon_3.svg"></div>
                         <div class="icon__title">
                             <p>CEO-оптимизация</p>
@@ -114,7 +121,7 @@
                             <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. </p>
                         </div>
                     </div>
-                    <div class="can__icons col-3">
+                    <div class="can__icons col-md-6 col-xs-12 col-lg-3">
                         <div><img class="icon" src="ic/icon_4.svg"></div>
                         <div class="icon__title">
                             <p>Маркетинг</p>
@@ -161,28 +168,34 @@
     <!--Калькулятор-->
     <section class="calculator" id="calc">
         <p class="calc__title">Расчет стоимости</p>
-        <div class="calc">
-            <div class="calc1">Тип сайта</div>
-            <select class="calc__opt" name="" id="">
+        <div class="container">
+            <div class="row">
+                <div class="calc">
+                    <div class="calc1">Тип сайта</div>
+                    <select class="calc__opt" name="" id="">
                 <option value="opt1">Интернет-представительство</option>
                 <option value="opt2">Лендинг</option>
                 <option value="opt3">Интернет-магазин</option>
             </select>
-            <div class="calc1">Дизайн</div>
-            <select class="calc__opt" name="" id="">
+                    <div class="calc1">Дизайн</div>
+                    <select class="calc__opt" name="" id="">
                 <option value="opt1">1</option>
                 <option value="opt2">2</option>
                 <option value="opt3">3</option>
             </select>
-            <div class="calc1">Адаптивность</div>
-            <select class="calc__opt" name="" id="">
+                    <div class="calc1">Адаптивность</div>
+                    <select class="calc__opt" name="" id="">
                 <option value="opt1">1</option>
                 <option value="opt2">2</option>
                 <option value="opt3">3</option>
             </select>
-            <p class="term">Сроки</p>
-            <p class="total">Стоимость</p>
+                    <p class="term">Сроки</p>
+                    <p class="total">Стоимость</p>
+                </div>
+            </div>
+
         </div>
+
     </section>
     <!--Статистика-->
     <section class="static">
@@ -190,8 +203,8 @@
         <img class="line" src="img/title.png" alt="">
         <div class="container">
             <div class="row">
-                <div class="static__inner d-flex flex-wrap">
-                    <div class="static__icon col-3">
+                <div class="static__inner">
+                    <div class="static__icon col-sm-4 col-xs-6 col-md-2">
                         <div><img class="icon" src="ic/static_1.svg"></div>
                         <div class="static__title">
                             <p>120</p>
@@ -200,7 +213,7 @@
                             <p>Счастливых клиентов</p>
                         </div>
                     </div>
-                    <div class="static__icon col-3">
+                    <div class="static__icon col-sm-4 col-xs-6 col-md-2">
                         <div><img class="icon" src="ic/static_2.svg"></div>
                         <div class="static__title">
                             <p>4,600</p>
@@ -209,7 +222,7 @@
                             <p>Часов работы</p>
                         </div>
                     </div>
-                    <div class="static__icon col-3">
+                    <div class="static__icon col-sm-4 col-xs-6 col-md-2">
                         <div><img class="icon" src="ic/static_3.svg"></div>
                         <div class="static__title">
                             <p>340</p>
@@ -218,7 +231,7 @@
                             <p>Проектов завершено</p>
                         </div>
                     </div>
-                    <div class="static__icon col-3">
+                    <div class="static__icon col-sm-4 col-xs-6 col-md-2">
                         <div><img class="icon" src="ic/static_4.svg"></div>
                         <div class="static__title">
                             <p>23</p>
