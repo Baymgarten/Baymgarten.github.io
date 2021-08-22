@@ -10,9 +10,8 @@
     700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/font-awesome.css" />
-
+    <link rel="stylesheet" href="css/style.css" />
     <title>Андрей Браун - Веб-разработчик</title>
 </head>
 
@@ -20,10 +19,11 @@
 
     <!--Меню-->
     <header>
+
         <nav>
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-2 col-lg-3 col-7">
+                    <div class="col-xxl-2 col-lg-3 col-md-7">
                         <div class="logo">Андрей Браун</div>
                     </div>
                     <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
@@ -39,17 +39,19 @@
                         </div>
                     </div>
                     <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle 
-                            white-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">Меню</button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li><a class="dropdown-item" href="#aboutme">Обо мне</a></li>
-                                <li><a class="dropdown-item" href="#can">Услуги</a></li>
-                                <li><a class="dropdown-item" href="#key">Кейсы</a></li>
-                                <li><a class="dropdown-item" href="#calc">Прайс</a></li>
-                                <li><a class="dropdown-item" href="#rewiews">Отзывы</a></li>
-                                <li><a class="dropdown-item" href="#contants">Контакты</a></li>
+                        <div class="menu-wrap">
+                            <input type="checkbox" id="checkbox">
+                            <ul class="tap">
+                                <li><a href="#aboutme">Обо мне</a></li>
+                                <li><a href="#can">Услуги</a></li>
+                                <li><a href="#key">Кейсы</a></li>
+                                <li><a href="#calc">Прайс</a></li>
+                                <li><a href="#rewiews">Отзывы</a></li>
+                                <li><a href="#contants">Контакты</a></li>
                             </ul>
+                            <label for="checkbox">
+                                <i class="fa fa-bars menu-icon"></i>
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -303,7 +305,7 @@
         <p class="foot">Copyright © 2021 Андрей Браун. Design by Web</p>
     </footer>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

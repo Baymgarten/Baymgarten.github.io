@@ -17,7 +17,7 @@
         background: #344051;
         font-family: "Franklin Gothic Medium", Arial, sans-serif;
         position: fixed;
-        z-index: 5;
+        z-index: 20;
         color: #fff;
     }
     
@@ -29,6 +29,9 @@
         float: left;
         font-family: "Franklin Gothic Medium", Arial, sans-serif;
         animation: comming 2s ease;
+        -o-animation: comming 2s ease;
+        -moz-animation: comming 2s ease;
+        -webkit-animation: comming 2s ease;
     }
     
     @keyframes comming {
@@ -42,7 +45,7 @@
     
     .menu {
         float: left;
-        z-index: 15;
+        z-index: 20;
     }
     
     .menu li {
@@ -53,6 +56,9 @@
         font-size: 16px;
         text-transform: uppercase;
         animation: topshift 0.4s ease forwards;
+        -o-animation: topshift 0.4s ease forwards;
+        -moz-animation: topshift 0.4s ease forwards;
+        -webkit-animation: topshift 0.4s ease forwards;
         opacity: 0;
     }
     
@@ -67,9 +73,58 @@
     
     .menu li {
         transition: all 0.3s;
-        color: #fff;
+        color: #ffffff;
         transform: scale(1);
         display: inline-block;
+    }
+    
+    .menu-wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+    
+    .menu-wrap ul {
+        list-style-type: none;
+        max-height: 0px;
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+    
+    .menu-wrap ul li {
+        padding: 0 15px;
+    }
+    
+    .menu-wrap ul li a {
+        display: inline-block;
+        padding: 12px;
+        color: #ffffff;
+        text-decoration: none;
+        letter-spacing: 0.05em;
+    }
+    
+    .menu-wrap ul li a:hover,
+    .menu-wrap ul li a:focus {
+        color: #cf7600;
+    }
+    
+    #checkbox {
+        display: none;
+    }
+    
+    #checkbox:checked~.tap {
+        max-height: 210px;
+        padding: 15px 0;
+        background-color: #4b5d77;
+        border-radius: 10px;
+        z-index: 20;
+        transition: all 0.5s;
+    }
+    
+    .menu-icon {
+        font-size: 2.4em;
+        color: #fff;
+        line-height: 50px;
     }
     
     .menu a:visited {
@@ -129,6 +184,9 @@
         opacity: 0;
         animation-delay: 2s;
         animation: titlemove 1.5s ease forwards;
+        -o-animation: titlemove 1.5s ease forwards;
+        -moz-animation: titlemove 1.5s ease forwards;
+        -webkit-animation: titlemove 1.5s ease forwards;
     }
     
     @keyframes titlemove {
@@ -225,6 +283,9 @@
         font-weight: bold;
         animation-delay: 2s;
         animation: title 1.5s ease-in forwards;
+        -o-animation: title 1.5s ease-in forwards;
+        -moz-animation: title 1.5s ease-in forwards;
+        -webkit-animation: title 1.5s ease-in forwards;
     }
     
     @keyframes title {
@@ -304,6 +365,9 @@
         margin-bottom: 30px;
         text-align: center;
         animation: canicons 0.4s ease forwards;
+        -o-animation: canicons 0.4s ease forwards;
+        -moz-animation: canicons 0.4s ease forwards;
+        -webkit-animation: canicons 0.4s ease forwards;
         opacity: 0;
     }
     
@@ -496,6 +560,9 @@
         font-family: "Impact", Arial, sans-serif;
         font-weight: 600;
         animation: static 0.4s ease forwards;
+        -o-animation: static 0.4s ease forwards;
+        -moz-animation: static 0.4s ease forwards;
+        -webkit-animation: static 0.4s ease forwards;
         opacity: 0;
     }
     
