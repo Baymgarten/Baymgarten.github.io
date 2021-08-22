@@ -426,10 +426,6 @@
         margin: 35px 0px 42px 0px;
     }
     
-    .work {
-        height: 590px;
-    }
-    
     .keys__resume {
         margin-top: 45px;
         display: inline-flex;
@@ -496,7 +492,6 @@
     
     .calc {
         text-align: left;
-        width: 887px;
         margin: 0 auto;
     }
     
@@ -510,7 +505,6 @@
     
     .calc__opt {
         background-color: #eeeeee;
-        width: 887px;
         height: 58px;
     }
     
@@ -634,6 +628,12 @@
         font-weight: bold;
     }
     
+    .cont__text {
+        text-align: center;
+        color: #ffffff;
+        padding-top: 20px;
+    }
+    
     .contants>p {
         color: #ffffff;
         padding-top: 30px;
@@ -697,7 +697,6 @@
     }
     
     .massage {
-        width: 733px;
         height: 96px;
         margin: 15px 0px 25px 0px;
     }
