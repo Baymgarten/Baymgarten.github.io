@@ -347,7 +347,6 @@
     }
     
     .can {
-        height: 524px;
         background: url(../img/background2.png);
         text-align: center;
         top: 0px;
@@ -696,8 +695,7 @@
         margin: 45px 15px 0px 15px;
     }
     
-    .massage {
-        height: 96px;
+    .message {
         margin: 15px 0px 25px 0px;
     }
     
